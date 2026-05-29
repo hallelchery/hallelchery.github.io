@@ -242,6 +242,19 @@
       line-height: 1.5;
     }
 
+    .card-link {
+      display: inline-block;
+      margin-top: 14px;
+      font-size: 12.5px;
+      font-weight: 500;
+      color: var(--crimson);
+      text-decoration: none;
+      border-bottom: 1.5px solid var(--gold);
+      padding-bottom: 1px;
+      transition: opacity 0.15s;
+    }
+    .card-link:hover { opacity: 0.7; }
+
     /* ─── FOOTER ─────────────────────────────── */
     footer {
       border-top: 1px solid var(--border);
@@ -303,7 +316,7 @@
         <p class="header-eyebrow">Portfolio</p>
         <h1>Hallel Chery</h1>
         <div class="gold-rule"></div>
-        <p class="header-tagline">Rising sophomore at Harvard University studying Applied Mathematics, interested in edge ML.</p>
+        <p class="header-tagline">Rising sophomore at Harvard University studying Applied Mathematics, interested in edge ML and the synthesis of electronic, photonic, and quantum systems for AI.</p>
       </div>
     </header>
 
@@ -317,14 +330,7 @@
         <!-- Metal Music Machine -->
         <article class="card">
           <div class="card-image card-image--music">
-            <!-- Sine wave + dotted pitch marker -->
-            <svg viewBox="0 0 780 154" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-              <path d="M0,77 C40,30 80,124 120,77 C160,30 200,124 240,77 C280,30 320,124 360,77 C400,30 440,124 480,77 C520,30 560,124 600,77 C640,30 680,124 720,77 C750,40 766,68 780,77"
-                    fill="none" stroke="rgba(120,60,0,0.18)" stroke-width="2.5" stroke-linecap="round"/>
-              <line x1="390" y1="20" x2="390" y2="134" stroke="rgba(120,60,0,0.12)" stroke-width="1.5" stroke-dasharray="4 4"/>
-              <circle cx="390" cy="77" r="4" fill="rgba(120,60,0,0.22)"/>
-            </svg>
-            <span class="img-label">Image placeholder</span>
+            <img src="music-machine.jpg" alt="Metal Music Machine" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -342,32 +348,16 @@
               <span class="tag">FDM &amp; resin printing</span>
               <span class="tag">Servo control</span>
             </div>
+            <a class="card-link" href="https://youtu.be/NopZoqZkfVk" target="_blank" rel="noopener noreferrer">
+              View project →
+            </a>
           </div>
         </article>
 
         <!-- Sensing Glove -->
         <article class="card">
           <div class="card-image card-image--glove">
-            <!-- Hand schematic: five finger dots in arc + palm base -->
-            <svg viewBox="0 0 780 154" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-              <g transform="translate(390,82)">
-                <!-- palm oval -->
-                <ellipse cx="0" cy="20" rx="46" ry="32" fill="none" stroke="rgba(120,80,0,0.15)" stroke-width="1.5"/>
-                <!-- five finger stems -->
-                <line x1="-38" y1="8"  x2="-54" y2="-36" stroke="rgba(120,80,0,0.18)" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="-16" y1="-6" x2="-20" y2="-50" stroke="rgba(120,80,0,0.18)" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="2"   y1="-10" x2="2"  y2="-54" stroke="rgba(120,80,0,0.18)" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="20"  y1="-6" x2="26"  y2="-50" stroke="rgba(120,80,0,0.18)" stroke-width="1.5" stroke-linecap="round"/>
-                <line x1="36"  y1="4"  x2="52"  y2="-34" stroke="rgba(120,80,0,0.18)" stroke-width="1.5" stroke-linecap="round"/>
-                <!-- sensor dots -->
-                <circle cx="-54" cy="-38" r="5" fill="rgba(120,80,0,0.22)"/>
-                <circle cx="-20" cy="-52" r="5" fill="rgba(120,80,0,0.22)"/>
-                <circle cx="2"   cy="-56" r="5" fill="rgba(120,80,0,0.22)"/>
-                <circle cx="26"  cy="-52" r="5" fill="rgba(120,80,0,0.22)"/>
-                <circle cx="52"  cy="-36" r="5" fill="rgba(120,80,0,0.22)"/>
-              </g>
-            </svg>
-            <span class="img-label">Image placeholder</span>
+            <img src="sensing-glove.jpg" alt="Sensing Glove" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -385,34 +375,16 @@
               <span class="tag">Laser cutting</span>
               <span class="tag">Fusion 360</span>
             </div>
+            <a class="card-link" href="https://youtu.be/CgMXPvm5mTw?si=gArcHX8leupdMDsy" target="_blank" rel="noopener noreferrer">
+              View project →
+            </a>
           </div>
         </article>
 
         <!-- Lucy Engine -->
         <article class="card">
           <div class="card-image card-image--engine">
-            <!-- Simple gear cross-section hint -->
-            <svg viewBox="0 0 780 154" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-              <g transform="translate(390,77)">
-                <circle cx="0" cy="0" r="42" fill="none" stroke="rgba(100,70,20,0.16)" stroke-width="1.5"/>
-                <circle cx="0" cy="0" r="16" fill="none" stroke="rgba(100,70,20,0.14)" stroke-width="1.5"/>
-                <!-- gear teeth (8) -->
-                <g stroke="rgba(100,70,20,0.16)" stroke-width="1.5" fill="none">
-                  <line x1="0" y1="-42" x2="0" y2="-54"/>
-                  <line x1="0" y1="42"  x2="0" y2="54"/>
-                  <line x1="-42" y1="0" x2="-54" y2="0"/>
-                  <line x1="42"  y1="0" x2="54"  y2="0"/>
-                  <line x1="-30" y1="-30" x2="-38" y2="-38"/>
-                  <line x1="30"  y1="-30" x2="38"  y2="-38"/>
-                  <line x1="-30" y1="30"  x2="-38" y2="38"/>
-                  <line x1="30"  y1="30"  x2="38"  y2="38"/>
-                </g>
-                <!-- cross hairs -->
-                <line x1="-16" y1="0" x2="16" y2="0" stroke="rgba(100,70,20,0.12)" stroke-width="1"/>
-                <line x1="0" y1="-16" x2="0" y2="16" stroke="rgba(100,70,20,0.12)" stroke-width="1"/>
-              </g>
-            </svg>
-            <span class="img-label">Image placeholder</span>
+            <img src="lucy-engine.jpg" alt="Lucy Engine" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -420,11 +392,11 @@
               <span class="badge badge--secondary">Machine Shop</span>
             </div>
             <p class="card-desc">
-              Machined from technical drawings as part of Harvard's Lyman Lab green training. Demonstrates precision metalworking across lathe, mill, and standard shop equipment.
+              Machined from technical drawings as part of Harvard's Lyman Instructional Machine Shop green training. Demonstrates precision metalworking across lathe, milling machine, and standard shop equipment.
             </p>
             <div class="card-tags">
-              <span class="tag">Lathe</span>
-              <span class="tag">Mill</span>
+              <span class="tag">Manual lathe</span>
+              <span class="tag">Milling Machine</span>
               <span class="tag">Blueprint reading</span>
               <span class="tag">Metal fabrication</span>
             </div>
@@ -434,28 +406,7 @@
         <!-- Tutor-Matching App -->
         <article class="card">
           <div class="card-image card-image--app">
-            <!-- Simple node graph -->
-            <svg viewBox="0 0 780 154" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet">
-              <g stroke="rgba(100,70,20,0.15)" stroke-width="1.2" fill="none">
-                <!-- edges -->
-                <line x1="290" y1="52" x2="370" y2="77"/>
-                <line x1="290" y1="102" x2="370" y2="77"/>
-                <line x1="370" y1="77" x2="450" y2="46"/>
-                <line x1="370" y1="77" x2="450" y2="77"/>
-                <line x1="370" y1="77" x2="450" y2="108"/>
-                <line x1="290" y1="52" x2="370" y2="30"/>
-                <line x1="370" y1="30" x2="450" y2="46"/>
-              </g>
-              <!-- nodes -->
-              <circle cx="290" cy="52"  r="7" fill="rgba(100,70,20,0.18)" stroke="none"/>
-              <circle cx="290" cy="102" r="7" fill="rgba(100,70,20,0.18)" stroke="none"/>
-              <circle cx="370" cy="77"  r="9" fill="rgba(180,130,0,0.28)" stroke="none"/>
-              <circle cx="370" cy="30"  r="5" fill="rgba(100,70,20,0.14)" stroke="none"/>
-              <circle cx="450" cy="46"  r="7" fill="rgba(100,70,20,0.18)" stroke="none"/>
-              <circle cx="450" cy="77"  r="7" fill="rgba(100,70,20,0.18)" stroke="none"/>
-              <circle cx="450" cy="108" r="7" fill="rgba(100,70,20,0.18)" stroke="none"/>
-            </svg>
-            <span class="img-label">Image placeholder</span>
+            <img src="tutoring-app.jpg" alt="Tutoring Web App" />
           </div>
           <div class="card-body">
             <div class="card-header">
@@ -469,6 +420,9 @@
               <span class="tag">JavaScript</span>
               <span class="tag">Web development</span>
             </div>
+            <a class="card-link" href="https://studio.code.org/projects/applab/pCHd1Fk1k8QNI1S_9DCFmJzjT0-rnPECmtliAKciLUY" target="_blank" rel="noopener noreferrer">
+              View project →
+            </a>
           </div>
         </article>
 
@@ -483,7 +437,7 @@
            target="_blank"
            rel="noopener noreferrer">LinkedIn</a>
         <a class="footer-link"
-           href="Resume.pdf"
+           href="hallelcheryCV.pdf"
            download>CV</a>
         <a class="footer-link"
            href="mailto:hallelchery@college.harvard.edu">hallelchery@college.harvard.edu</a>
